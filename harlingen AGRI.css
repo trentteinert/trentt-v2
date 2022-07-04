@@ -350,13 +350,19 @@ body{
     justify-content:center;
     cursor: pointer;
   }
-  .scrolltotop{
-    display: none;
-  } 
-  .btn{
-    display: none;
-    
-  }
+.img3{
+  display: none;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-bottom:60px;
+}
+.scrolltotop{
+  display: none;
+} 
+.btn{
+  display: none;
+  
+}
 @media only screen and (max-device-width:600px)
 {
   body{
@@ -558,7 +564,7 @@ body{
         display: none;
       }
       #container2{
-        display: block;
+        display: none;
       }
     
     /* Hide the images by default */
@@ -661,7 +667,7 @@ body{
     .row{
       width:100%;
       height: 1000px;
-      display: block;
+      display: none;
       animation: fade-inout 0.5s alternate;
       background-color: rgba(112, 112, 173, 0);
     }
@@ -724,22 +730,35 @@ body{
     }
     .scrolltotop{
       width: 100%;
-      display: flex;justify-content: center;
+      display: flex;
+      justify-content: center;
       height: 100px;
-      margin-top: 8585px;
+      margin-top: 0px;
       background-color: rgba(0, 0, 255, 0);
     } 
     .btn{
-      width: 50%;
+      width:100%;
       font-family: 'Inconsolata';
       display: flex;
       height: 30px;
       background-color: rgba(170, 170, 170, 0);
       margin: auto;
+      margin-top: 0px;
       color: var(--secondary-color);
       padding-top: 8px;
       border: none;
       justify-content: center;
-      
+    }
+    .mobilegallery{
+      display: block;
+      width: 100%;
+      height:fit-content;
+      padding-top: 30px;
+    }
+    .img3{
+      display: block;
+      width: 95%;
+      margin-left: 2.5%;
+      margin-bottom:30px;
     }
   }
