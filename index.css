@@ -712,9 +712,12 @@ body{
       justify-content:center;
     }
     img.img2{
-      max-height: 500px;
-      pointer-events: none;
       width: 95%;
+      height: fit-content;
+    }
+    .img2{
+      pointer-events: none;
+      width: 90%;
       margin-top: 0;
       margin-left: 2.5%;
       display: flex;
