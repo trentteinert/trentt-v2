@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" type="image/png" href="./favicon.png">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="./harlingen.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HGN</title>
+</head>
+<body>
+  <img class="darkmode" id="darkmode" onclick="darkmodeactivate()" src="/components/darkmode-light.png"></img>
+    <div id="left"class="left">
+      <div class="tittle">Trent Teinert</div>
+      <a class="contact" href="mailto:trentteinert@gmail.com">contact@trentteinert.com</a><br/>
+      <div id="bioexpand" class="bioexpand" onclick="showbio()">+ bio
+      </div>
+      <div id="bioclose" class="bioexpand" onclick="showbio()" style="display:none;">- bio
+      </div>
+      <a id="bioexpand" class="bioexpand" href="./CV.html">+ CV</a>
+      <a id="workexpand" class="bioexpand" onclick="workopen()">+ menu</a>
+      <a id="workclose" class="bioexpand" onclick="workopen()" style="display:none;">- menu</a>
+    </div>
+    <div id="workmenu" style="display:none;"class="workmenu">
+      <a class="work" href="./index.html"><div class="work1">Now I lay me down to sleep.</div></a>
+      <a class="work" href="./Harlingen.html"><div class="work1" style="color:rgb(245, 131, 131);">Harlingen</div></a>
+      <a class="work" href="./Harlingen AGRI.html"><div class="work1">Harlingen AGRI</div></a>
+      <a class="work" href="./disquiet.html"><div class="work1">Disquiet</div></a>
+    </div>
+    <div id="bio" class="bio">Is a photographer currently residing in the Lower East Side of Manhattan. His current work falls in between portraiture and landscape, working as environmental portraits on the street of NY. relying on happenstance and will to find ways of connecting with his surroundings. Relying on the people to draw him in by their movement and routine. Distracting the mind and falling into sync with the environment.</div>
+
+    <div id="NILMDTS" class="NILMDTS" style="display:block;">
+      <div id="container" class="container">
+  <div class="arrows">
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    <div id="gallerybtn" class="gallerybtn" onclick="galleryopen()">+ gallery
+    </div>
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">1 / 22</div>
+    <img class="img1" onclick="plusSlides(1)" src="/components/HLGN/HLGN (1).jpg">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">2 / 22</div>
+    <img class="img1" onclick="plusSlides(1)" src="/components/HLGN/HLGN (2).jpg">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">3 / 22</div>
+    <img class="img1" onclick="plusSlides(1)" src="/components/HLGN/HLGN (3).jpg">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">4 / 22</div>
+    <img class="img1" onclick="plusSlides(1)" src="/components/HLGN/HLGN (5).jpg">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">5 / 22</div>
+    <img class="img1" onclick="plusSlides(1)" src="/components/HLGN/HLGN (6).jpg">
+  </div>  
+  <div class="mySlides">
+    <div class="numbertext">6 / 22</div>
+    <img class="img1" onclick="plusSlides(1)" src="/components/HLGN/HLGN (7).jpg">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">7 / 22</div>
+    <img class="img1" onclick="plusSlides(1)" src="/components/HLGN/HLGN (8).jpg">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">8 / 22</div>
+    <img class="img1" onclick="plusSlides(1)" src="/components/HLGN/HLGN (9).jpg">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">9 / 22</div>
+    <img class="img1" onclick="plusSlides(1)" src="/components/HLGN/HLGN (10).jpg">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">10 / 22</div>
+    <img class="img1" onclick="plusSlides(1)" src="/components/HLGN/HLGN (11).jpg">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">11 / 22</div>
+    <img class="img1" onclick="plusSlides(1)" src="/components/HLGN/HLGN (23).jpg">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">12 / 22</div>
+    <img class="img1" onclick="plusSlides(1)" src="/components/HLGN/HLGN (12).jpg">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">13 / 22</div>
+    <img class="img1" onclick="plusSlides(1)" src="/components/HLGN/HLGN (13).jpg">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">14 / 22</div>
+    <img class="img1" onclick="plusSlides(1)" src="/components/HLGN/HLGN (14).jpg">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">15 / 22</div>
+    <img class="img1" onclick="plusSlides(1)" src="/components/HLGN/HLGN (15).jpg">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext"style="padding-right:0%;">16 / 22</div>
+    <img class="img1" style="width:100%;" onclick="plusSlides(1)" src="/components/HLGN/HLGN (16).jpg">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">17 / 22</div>
+    <img class="img1" onclick="plusSlides(1)" src="/components/HLGN/HLGN (17).jpg">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">18 / 22</div>
+    <img class="img1" onclick="plusSlides(1)" src="/components/HLGN/HLGN (18).jpg">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">19 / 22</div>
+    <img class="img1" onclick="plusSlides(1)" src="/components/HLGN/HLGN (19).jpg">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">20 / 22</div>
+    <img class="img1" onclick="plusSlides(1)" src="/components/HLGN/HLGN (20).jpg">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">21 / 22</div>
+    <img class="img1" onclick="plusSlides(1)" src="/components/HLGN/HLGN (21).jpg">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">22 / 22</div>
+    <img class="img1" onclick="plusSlides(1)" src="/components/HLGN/HLGN (22).jpg">
+  </div>
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+</div>
+<div id="container2" class="container" >
+  <div class="arrows">
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    <div id="gallerybtn" class="gallerybtn" onclick="galleryclose()">- gallery
+    </div>
+  </div>
+  <div class="mySlides2">
+    <div class="numbertext">1 / 8</div>
+  </div>
+  <div class="row" style="margin-top:0px; width:100%;">
+    <div class="column">
+      <img class="img2" src="/components/HLGN/HLGN (1).jpg" onclick="galleryclose(), currentSlide2(1)" alt="">
+    </div>
+    <div class="column">
+      <img class="img2" src="/components/HLGN/HLGN (2).jpg" onclick="galleryclose(), currentSlide2(2)" alt="">
+    </div>
+    <div class="column">
+      <img class="img2" src="/components/HLGN/HLGN (3).jpg" onclick="galleryclose(), currentSlide2(3)" alt="">
+    </div>
+    <div class="column">
+      <img class="img2" src="/components/HLGN/HLGN (5).jpg" onclick="galleryclose(), currentSlide2(4)" alt="">
+    </div>
+    <div class="column">
+      <img class="img2" src="/components/HLGN/HLGN (6).jpg" onclick="galleryclose(), currentSlide2(5)" alt="">
+    </div>    
+    <div class="column">
+      <img class="img2" src="/components/HLGN/HLGN (7).jpg" onclick="galleryclose(), currentSlide2(6)" alt="">
+    </div>
+    <div class="column">
+      <img class="img2" src="/components/HLGN/HLGN (8).jpg" onclick="galleryclose(), currentSlide2(7)" alt="">
+    </div>
+    <div class="column">
+      <img class="img2" src="/components/HLGN/HLGN (9).jpg" onclick="galleryclose(), currentSlide2(8)" alt="">
+    </div>
+    <div class="column">
+      <img class="img2" src="/components/HLGN/HLGN (10).jpg" onclick="galleryclose(), currentSlide2(9)" alt="">
+    </div>
+    <div class="column">
+      <img class="img2" src="/components/HLGN/HLGN (11).jpg" onclick="galleryclose(), currentSlide2(10)" alt="">
+    </div>
+    <div class="column">
+      <img class="img2" src="/components/HLGN/HLGN (23).jpg" onclick="galleryclose(), currentSlide2(11)" alt="">
+    </div>    
+    <div class="column">
+      <img class="img2" src="/components/HLGN/HLGN (12).jpg" onclick="galleryclose(), currentSlide2(12)" alt="">
+    </div>
+    <div class="column">
+      <img class="img2" src="/components/HLGN/HLGN (13).jpg" onclick="galleryclose(), currentSlide2(13)" alt="">
+    </div>
+    <div class="column">
+      <img class="img2" src="/components/HLGN/HLGN (14).jpg" onclick="galleryclose(), currentSlide2(14)" alt="">
+    </div>
+    <div class="column">
+      <img class="img2" src="/components/HLGN/HLGN (15).jpg" onclick="galleryclose(), currentSlide2(15)" alt="">
+    </div>
+    <div class="column">
+      <img class="img2" src="/components/HLGN/HLGN (16).jpg" onclick="galleryclose(), currentSlide2(16)" alt="">
+    </div>
+    <div class="column">
+      <img class="img2" src="/components/HLGN/HLGN (17).jpg" onclick="galleryclose(), currentSlide2(17)" alt="">
+    </div>
+    <div class="column">
+      <img class="img2" src="/components/HLGN/HLGN (18).jpg" onclick="galleryclose(), currentSlide2(18)" alt="">
+    </div>
+    <div class="column">
+      <img class="img2" src="/components/HLGN/HLGN (19).jpg" onclick="galleryclose(), currentSlide2(19)" alt="">
+    </div>
+    <div class="column">
+      <img class="img2" src="/components/HLGN/HLGN (20).jpg" onclick="galleryclose(), currentSlide2(20)" alt="">
+    </div>
+    <div class="column">
+      <img class="img2" src="/components/HLGN/HLGN (21).jpg" onclick="galleryclose(), currentSlide2(21)" alt="">
+    </div>
+    <div class="column">
+      <img class="img2" src="/components/HLGN/HLGN (22).jpg" onclick="galleryclose(), currentSlide2(22)" alt="">
+    </div>
+  </div>
+</div>
+<div class="scrolltotop">
+  <button class="btn" onclick="topFunction()">scroll to top</button>
+</div>
+</div>
+<script>
+  function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<script>
+  function darkmodeactivate() {
+    if (document.getElementById("darkmode").src == "/components/darkmode-light.png"){
+        document.getElementById("darkmode").src = "/components/darkmode-dark.png";
+    } else {
+        document.getElementById("darkmode").src = "/components/darkmode-light.png";
+    }
+}
+</script>
+<script>
+ var icon = document.getElementById("darkmode");
+ icon.onclick = function(){
+  document.body.classList.toggle("dark-theme");
+ }
+</script>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function currentSlide2(n) {
+  showSlides2(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+function showSlides2(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+</script>
+<script>
+    function showbio() {
+  var x = document.getElementById("bioexpand");
+  if (x.style.display === "none") {
+    x.style.display = "inline";
+  } else {
+    x.style.display = "none";
+  }
+  var x = document.getElementById("bioclose");
+  if (x.style.display === "inline") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "inline";
+  }
+  var x = document.getElementById("bio");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+  var x = document.getElementById("workexpand");
+  if (x.style.display === "inline") {
+    x.style.display = "inline";
+  } else {
+    x.style.display = "inline";
+  }
+  var x = document.getElementById("workclose");
+  if (x.style.display === "inline") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "none";
+  }
+  var x = document.getElementById("workmenu");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+<script>
+      function galleryopen() {
+    var x = document.getElementById("container");
+    if (x.style.display === "") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "";
+    }
+    var x = document.getElementById("container2");
+    if (x.style.display === "") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "";
+    }
+  }
+  function galleryclose() {
+    var x = document.getElementById("container");
+    if (x.style.display === "") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "";
+    }
+    var x = document.getElementById("container2");
+    if (x.style.display === "") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "";
+    }
+  }
+  function workopen() {
+  var x = document.getElementById("workexpand");
+  if (x.style.display === "none") {
+    x.style.display = "inline";
+  } else {
+    x.style.display = "none";
+  }
+  var x = document.getElementById("workclose");
+  if (x.style.display === "none") {
+    x.style.display = "inline";
+  } else {
+    x.style.display = "none";
+  }
+  var x = document.getElementById("workmenu");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+  var x = document.getElementById("bioexpand");
+  if (x.style.display === "inline") {
+    x.style.display = "inline";
+  } else {
+    x.style.display = "inline";
+  }
+  var x = document.getElementById("bioclose");
+  if (x.style.display === "none") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "none";
+  }
+  var x = document.getElementById("bio");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+<script>
+    function openNILMDTS() {
+  var x = document.getElementById("NILMDTS");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "block";
+  }
+}
+function openHarlingen() {
+  var x = document.getElementById("Harlingen");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</body>
+</html>
