@@ -554,7 +554,7 @@ body{
         width: 100%;
         margin-left:0px;
         margin-top: 30px;
-        height: 500px;
+        height: fit-content;
         padding-top: 0px;
         background-color: rgba(168, 45, 45, 0);
       }
@@ -712,7 +712,7 @@ body{
       justify-content:center;
     }
     img.img2{
-      height: fit-content;
+      max-height: 500px;
       pointer-events: none;
       width: 95%;
       margin-top: 0;
@@ -726,16 +726,17 @@ body{
       display: flex;
       justify-content: center;
       height: 100px;
-      margin-top: 3544px;
+      margin-top: 0px;
       background-color: rgba(0, 0, 255, 0);
     } 
     .btn{
-      width: 50%;
+      width:100%;
       font-family: 'Inconsolata';
       display: flex;
       height: 30px;
       background-color: rgba(170, 170, 170, 0);
       margin: auto;
+      margin-top: 0px;
       color: var(--secondary-color);
       padding-top: 8px;
       border: none;
