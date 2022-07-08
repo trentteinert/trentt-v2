@@ -22,7 +22,7 @@
       <a id="workexpand" class="bioexpand" onclick="workopen()">+ menu</a>
       <a id="workclose" class="bioexpand" onclick="workopen()" style="display:none;">- menu</a>
     </div>
-    <div id="workmenu" style="display:none;"class="workmenu">
+    <div id="workmenu" class="workmenu">
       <a class="work" href="./index.html"><div class="work1">Now I lay me down to sleep.</div></a>
       <a class="work" href="./Harlingen.html"><div class="work1">Harlingen</div></a>
       <a class="work" href="./Harlingen AGRI.html"><div class="work1">Harlingen AGRI</div></a>
@@ -228,10 +228,10 @@ function showSlides2(n) {
     x.style.display = "none";
   }
   var x = document.getElementById("workmenu");
-  if (x.style.display === "none") {
+  if (x.style.display === "") {
     x.style.display = "block";
   } else {
-    x.style.display = "none";
+    x.style.display = "";
   }
   var x = document.getElementById("bioexpand");
   if (x.style.display === "inline") {

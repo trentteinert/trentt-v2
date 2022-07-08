@@ -120,6 +120,9 @@ body{
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
   }
+  #workexpand{
+    display: none;
+  }
   .work{
     text-decoration: none;
   }
@@ -138,7 +141,7 @@ body{
     user-select: none; /* Standard */
   }
   .workmenu{
-    display:none;
+    display:block;
     position: absolute;
     width: 100%;
     left: 102px;
@@ -490,6 +493,9 @@ body{
       -moz-user-select: none; /* Firefox */
       -ms-user-select: none; /* IE10+/Edge */
       user-select: none; /* Standard */
+    }
+    #workexpand{
+      display: inline;
     }
     .work{
       text-decoration: none;
