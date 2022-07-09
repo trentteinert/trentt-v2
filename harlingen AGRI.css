@@ -288,10 +288,11 @@ body{
     color: white;
   }
   .row{
-    width:100%;
+    width:100%; 
     margin-top: 25px;
     height: fit-content;
     display: grid;
+    justify-content: center;
     animation: fade-inout 0.5s alternate;
     grid-template-columns:repeat(4, 23%);
     justify-content: space-between;
@@ -311,9 +312,9 @@ body{
   /* Six columns side by side */
   .column {
     display: flex;
-    height: fit-content;
-    width:100%;
     margin-bottom: 15px;
+    height:fit-content;
+    width:100%;
       background-color: rgb(34, 34, 34);
   }
   
