@@ -18,9 +18,15 @@
       </div>
       <div id="bioclose" class="bioexpand" onclick="showbio()" style="display:none;">- bio
       </div>
-      <a id="bioexpand" class="bioexpand" href="./CV.html">+ CV</a>
+      <div id="bioexpandmobile" class="bioexpand" onclick="showbio2()">+ bio
+      </div>
+      <div id="bioclosemobile" class="bioexpand" onclick="showbio2()" style="display:none;">- bio
+      </div>
+      <a id="CVexpand" class="bioexpand" href="./CV.html">+ CV</a>
       <a id="workexpand" class="bioexpand" onclick="workopen()">+ menu</a>
-      <a id="workclose" class="bioexpand" onclick="workopen()" style="display:none;">- menu</a>
+      <a id="workclose" class="bioexpand" onclick="workopen()">- menu</a>
+      <a id="workexpandmobile" class="bioexpand" onclick="workopen2()">+ menu</a>
+      <a id="workclosemobile" class="bioexpand" onclick="workopen2()">- menu</a>
     </div>
     <div id="workmenu" class="workmenu">
       <a class="work" href="./index.html"><div class="work1" style="color:rgb(245, 131, 131);">Now I lay me down to sleep.</div></a>
@@ -273,6 +279,44 @@ function showSlides2(n) {
     x.style.display = "none";
   }
 }
+function showbio2() {
+  var x = document.getElementById("bioexpandmobile");
+  if (x.style.display === "none") {
+    x.style.display = "inline";
+  } else {
+    x.style.display = "none";
+  }
+  var x = document.getElementById("bioclosemobile");
+  if (x.style.display === "inline") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "inline";
+  }
+  var x = document.getElementById("bio");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+  var x = document.getElementById("workexpandmobile");
+  if (x.style.display === "inline") {
+    x.style.display = "inline";
+  } else {
+    x.style.display = "inline";
+  }
+  var x = document.getElementById("workclosemobile");
+  if (x.style.display === "inline") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "none";
+  }
+  var x = document.getElementById("workmenu");
+  if (x.style.display === "block") {
+    x.style.display = "";
+  } else {
+    x.style.display = "";
+  }
+}
 </script>
 <script>
       function galleryopen() {
@@ -305,10 +349,10 @@ function showSlides2(n) {
   }
   function workopen() {
   var x = document.getElementById("workexpand");
-  if (x.style.display === "none") {
+  if (x.style.display === "") {
     x.style.display = "inline";
   } else {
-    x.style.display = "none";
+    x.style.display = "";
   }
   var x = document.getElementById("workclose");
   if (x.style.display === "none") {
@@ -318,7 +362,7 @@ function showSlides2(n) {
   }
   var x = document.getElementById("workmenu");
   if (x.style.display === "") {
-    x.style.display = "block";
+    x.style.display = "none";
   } else {
     x.style.display = "";
   }
@@ -329,6 +373,44 @@ function showSlides2(n) {
     x.style.display = "inline";
   }
   var x = document.getElementById("bioclose");
+  if (x.style.display === "none") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "none";
+  }
+  var x = document.getElementById("bio");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "none";
+  }
+}
+function workopen2() {
+  var x = document.getElementById("workexpandmobile");
+  if (x.style.display === "none") {
+    x.style.display = "inline";
+  } else {
+    x.style.display = "none";
+  }
+  var x = document.getElementById("workclosemobile");
+  if (x.style.display === "inline") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "inline";
+  }
+  var x = document.getElementById("workmenu");
+  if (x.style.display === "") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "";
+  }
+  var x = document.getElementById("bioexpandmobile");
+  if (x.style.display === "inline") {
+    x.style.display = "inline";
+  } else {
+    x.style.display = "inline";
+  }
+  var x = document.getElementById("bioclosemobile");
   if (x.style.display === "none") {
     x.style.display = "none";
   } else {

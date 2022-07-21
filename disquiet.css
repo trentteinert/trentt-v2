@@ -120,9 +120,7 @@ body{
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
   }
-  #workexpand{
-    display: none;
-  }
+
   .work{
     text-decoration: none;
   }
@@ -149,6 +147,27 @@ body{
     height: fit-content;
     color:var(--secondary-color);
     background-color: rgba(0, 0, 255, 0);
+  }
+  #bioexpand{
+    display: inline;
+  }
+  #bioclose{
+    display: none;
+  }
+  #bioclosemobile{
+    display: none;
+  }
+  #bioexpandmobile{
+    display: none;
+  }
+  #workexpand{
+    display: none;
+  }
+  #workclosemobile{
+    display: none;
+  }
+  #workexpandmobile{
+    display: none;
   }
   .bioexpand .show{
     visibility: visible;
@@ -466,7 +485,6 @@ body{
       user-select: none; /* Standard */
     }
     .bioexpand{
-      display: inline;
       font-size: .9em;
       background-color: rgba(15, 247, 255, 0);
       text-align: left;
@@ -494,7 +512,28 @@ body{
       -ms-user-select: none; /* IE10+/Edge */
       user-select: none; /* Standard */
     }
+    #bioexpand{
+      display: none;
+    }
+    #bioclose{
+      display: none;
+    }
+    #bioclosemobile{
+      display: none;
+    }
+    #bioexpandmobile{
+      display: inline;
+    }
     #workexpand{
+      display: none;
+    }
+    #workclose{
+      display: none;
+    }
+    #workclosemobile{
+      display: none;
+    }
+    #workexpandmobile{
       display: inline;
     }
     .work{
@@ -516,7 +555,6 @@ body{
     }
     .workmenu{
       z-index: 1;
-      display:none;
       position: relative;
       width: 80%;
       z-index: 1;
@@ -529,6 +567,9 @@ body{
       top:0px;
       height: fit-content;
       background-color: rgba(0, 0, 255, 0);
+    }
+    #workmenu{
+      display:none;
     }
     .bioexpand .show{
       visibility: visible;
