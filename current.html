@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="current.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="container">
+    <img class="img1" id="box" src="./components/install/img1-2.png"></img>
+    <img class="img2" id="box" src="./components/install/img1.png"></img>
+    <img class= "img3" id="box" src="./components/install/sign1.png"></img>
+  </div>
+  <script>
+    window.onload = function() {
+  // find the element that you want to drag.
+  var box = document.getElementById('box');
+  
+  /* listen to the touchMove event,
+  every time it fires, grab the location
+  of touch and assign it to box */
+  
+  box.addEventListener('touchmove', function(e) {
+    // grab the location of touch
+    var touchLocation = e.targetTouches[0];
+    
+    // assign box new coordinates based on the touch.
+    box.style.left = touchLocation.pageX + 'px';
+    box.style.top = touchLocation.pageY + 'px';
+  })
+  
+  /* record the position of the touch
+  when released using touchend event.
+  This will be the drop position. */
+  
+  box.addEventListener('touchend', function(e) {
+    // current box position.
+    var x = parseInt(box.style.left);
+    var y = parseInt(box.style.top);
+  })
+  
+}
+  </script>
+</body>
+</html>
