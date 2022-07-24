@@ -3,39 +3,329 @@
 <head>
   <link rel="shortcut icon" type="image/png" href="./favicon.png">
   <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;400&display=swap" rel="stylesheet">
+
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="stylesheet" href="CV.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Curriculum Vitae</title>
 </head>
 <body>
-  <a class="gohome" href="./index.html">< home</a>
-  <div id="left"class="left">
-    <p class="tittle">Trent Teinert</p>
-    <a href="mailto:trentteinert@gmail.com"><p>contact@trentteinert.com</p></a>
-    <p>1998-</p>
-    <p>Born in Harlingen,Tx</p>
-    <div class="linkbox">
-    <a class="dwnldpdf" href="/components/CV_MAY_2022.pdf" download>Download PDF</a>
-  </div>
-  </div>
-  <div class="textblock">
-    <h1>EDUCATION</h1> 
-    <p>● 2023 MFA with a Photography concentration, Parsons New School of Design, New York, NY, (expected 2023)</p>
-    <p>● 2021 BFA with a Photography and Digital Media concentration, Kathrine G. McGovern College of the Arts, University of Houston, Houston, TX</p>
-    <h1>EXHIBITIONS</h1> 
-    <p>● 2021 ‘UH School of Art Annual Student Exhibition’ Blaffer Art Museum, Houston, TX ● 2021 ‘Emergence’ Part II, UH Senior Block Exhibition, Houston, TX ● 2020 ‘Untitled’ For 1100 Louisiana's' Video Wall, (pending) Houston, Texas (in collaboration with Reggie Tucker, Lisa Bridges, and Dre Negrete)</p> 
-    <p>● 2020 ‘Assuming the Pose: Contemporary Takes on Portraiture’, Third Space, Fine Arts Building, University of Houston, Houston, Texas</p>
-    <p>● 2019 ‘Disquiet’ Block Review Showing, University of Houston, Fine Arts Building, Houston, Texas</p>
-    <h1>PUBLICATIONS</h1> 
-    <p>● 2021 ‘Harlingen AGRI’ Feature, University of Houston’s 2021 Photo Digital Media Student Exhibition ‘Emergence’ Part II, Here (2021)</p>
-    <p>● 2021 ‘Onions’ Feature ‘In Parentheses Magazine’, Volume 6, Issue 4, Now Available (2021)</p>
-    <p>● 2020 ‘Trenton Teinert,’ Deep Red Press, Month’s Featured Artist Here (2020) ● 2020 ‘Harlingen’ Self Published Photo Zine, a Reflection of My Hometown (2020)</p>
-    <h1>RELATED EXPERIENCE</h1> 
-    <p>● 2017-20 Freelance, Harlingen/Houston, TX, Creator</p>
-    <p>● 2016-18 Fast Signs, Harlingen, TX, Designer</p>
-    <h1>RESEARCH</h1> 
-    <p>● 2020 Independent Study, Faculty Leadership Professor Delilah Montoya; Agriculture study of Harlingen Texas.</p>
-  </div>
+  <!DOCTYPE html>
+<html lang="en">
+<body>
+  <img class="darkmode" id="darkmode" onclick="darkmodeactivate()" src="/components/darkmode-light.png"></img>
+    <div id="left"class="left">
+      <div class="tittle">Trent Teinert</div>
+      <a class="contact" href="mailto:trentteinert@gmail.com">contact@trentteinert.com</a><br/>
+      <div id="bioexpand" class="bioexpand" onclick="showbio()">+ bio
+      </div>
+      <div id="bioclose" class="bioexpand" onclick="showbio()" style="display:none;">- bio
+      </div>
+      <div id="bioexpandmobile" class="bioexpand" onclick="showbio2()">+ bio
+      </div>
+      <div id="bioclosemobile" class="bioexpand" onclick="showbio2()" style="display:none;">- bio
+      </div>
+      <a id="CVexpand" class="bioexpand" href="./CV.html">+ CV</a>
+      <a id="workexpand" class="bioexpand" onclick="workopen()">+ menu</a>
+      <a id="workclose" class="bioexpand" onclick="workopen()">- menu</a>
+      <a id="workexpandmobile" class="bioexpand" onclick="workopen2()">+ menu</a>
+      <a id="workclosemobile" class="bioexpand" onclick="workopen2()">- menu</a>
+    </div>
+    <div id="workmenu" class="workmenu">
+      <a class="work" href="./index.html"><div class="work1" style="color:rgb(245, 131, 131);">Now I lay me down to sleep.</div></a>
+      <a class="work" href="./Harlingen.html"><div class="work1">Harlingen</div></a>
+      <a class="work" href="./Harlingen AGRI.html"><div class="work1">Harlingen AGRI</div></a>
+      <a class="work" href="./disquiet.html"><div class="work1">Disquiet</div></a>
+    </div>
+    <div id="bio" class="bio">Trent Teinert is a guy currently residing in the Lower East Side of Manhattan. His creative practice explores the distant connection to his sociological surroundings. As a wanderer in the streets of New York City, he observes people, objects, and how they navigate and interact with the world around them. He relies on people to draw him in by their movements and daily routines Finding a story to pull from his images, relating to codependency and the flux of human emotion…
+    </div>
+<div class="textblock">
+  <p>Born 1998 / Harlingen, Tx.</p>
+  <h1>EDUCATION</h1> 
+  <p>- 2023 MFA with a Photography concentration, Parsons New School of Design, New York, NY, (expected 2023)</p>
+  <p>- 2021 BFA with a Photography and Digital Media concentration, Kathrine G. McGovern College of the Arts, University of Houston, Houston, TX</p>
+  <h1>EXHIBITIONS</h1> 
+  <p>- 2021 ‘UH School of Art Annual Student Exhibition’ Blaffer Art Museum, Houston, TX - 2021 ‘Emergence’ Part II, UH Senior Block Exhibition, Houston, TX - 2020 ‘Untitled’ For 1100 Louisiana's' Video Wall, (pending) Houston, Texas (in collaboration with Reggie Tucker, Lisa Bridges, and Dre Negrete)</p> 
+  <p>- 2020 ‘Assuming the Pose: Contemporary Takes on Portraiture’, Third Space, Fine Arts Building, University of Houston, Houston, Texas</p>
+  <p>- 2019 ‘Disquiet’ Block Review Showing, University of Houston, Fine Arts Building, Houston, Texas</p>
+  <h1>PUBLICATIONS</h1> 
+  <p>- 2021 ‘Harlingen AGRI’ Feature, University of Houston’s 2021 Photo Digital Media Student Exhibition ‘Emergence’ Part II, Here (2021)</p>
+  <p>- 2021 ‘Onions’ Feature ‘In Parentheses Magazine’, Volume 6, Issue 4, Now Available (2021)</p>
+  <p>- 2020 ‘Trenton Teinert,’ Deep Red Press, Month’s Featured Artist Here (2020) - 2020 ‘Harlingen’ Self Published Photo Zine, a Reflection of My Hometown (2020)</p>
+  <h1>RELATED EXPERIENCE</h1> 
+  <p>- 2017-20 Freelance, Harlingen/Houston, TX, Creator</p>
+  <p>- 2016-18 Fast Signs, Harlingen, TX, Designer</p>
+  <h1>RESEARCH</h1> 
+  <p>- 2020 Independent Study, Faculty Leadership Professor Delilah Montoya; Agriculture study of Harlingen Texas.</p>
+</div>
+<div class="linkbox">
+  <a class="dwnldpdf" href="/components/CV_MAY_2022.pdf" download>Download PDF</a>
+</div>
+<div class="scrolltotop">
+  <button class="btn" onclick="topFunction()">scroll to top</button>
+</div>
+<script>
+  function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<script>
+  function darkmodeactivate() {
+    if (document.getElementById("darkmode").src == "/components/darkmode-light.png"){
+        document.getElementById("darkmode").src = "/components/darkmode-dark.png";
+    } else {
+        document.getElementById("darkmode").src = "/components/darkmode-light.png";
+    }
+}
+</script>
+<script>
+ var icon = document.getElementById("darkmode");
+ icon.onclick = function(){
+  document.body.classList.toggle("dark-theme");
+ }
+</script>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function currentSlide2(n) {
+  showSlides2(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+function showSlides2(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+</script>
+<script>
+    function showbio() {
+  var x = document.getElementById("bioexpand");
+  if (x.style.display === "none") {
+    x.style.display = "inline";
+  } else {
+    x.style.display = "none";
+  }
+  var x = document.getElementById("bioclose");
+  if (x.style.display === "inline") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "inline";
+  }
+  var x = document.getElementById("bio");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+  var x = document.getElementById("workexpand");
+  if (x.style.display === "inline") {
+    x.style.display = "inline";
+  } else {
+    x.style.display = "inline";
+  }
+  var x = document.getElementById("workclose");
+  if (x.style.display === "inline") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "none";
+  }
+  var x = document.getElementById("workmenu");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "none";
+  }
+}
+function showbio2() {
+  var x = document.getElementById("bioexpandmobile");
+  if (x.style.display === "none") {
+    x.style.display = "inline";
+  } else {
+    x.style.display = "none";
+  }
+  var x = document.getElementById("bioclosemobile");
+  if (x.style.display === "inline") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "inline";
+  }
+  var x = document.getElementById("bio");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+  var x = document.getElementById("workexpandmobile");
+  if (x.style.display === "inline") {
+    x.style.display = "inline";
+  } else {
+    x.style.display = "inline";
+  }
+  var x = document.getElementById("workclosemobile");
+  if (x.style.display === "inline") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "none";
+  }
+  var x = document.getElementById("workmenu");
+  if (x.style.display === "block") {
+    x.style.display = "";
+  } else {
+    x.style.display = "";
+  }
+}
+</script>
+<script>
+      function galleryopen() {
+    var x = document.getElementById("container");
+    if (x.style.display === "") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "";
+    }
+    var x = document.getElementById("container2");
+    if (x.style.display === "") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "";
+    }
+  }
+  function galleryclose() {
+    var x = document.getElementById("container");
+    if (x.style.display === "") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "";
+    }
+    var x = document.getElementById("container2");
+    if (x.style.display === "") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "";
+    }
+  }
+  function workopen() {
+  var x = document.getElementById("workexpand");
+  if (x.style.display === "") {
+    x.style.display = "inline";
+  } else {
+    x.style.display = "";
+  }
+  var x = document.getElementById("workclose");
+  if (x.style.display === "none") {
+    x.style.display = "inline";
+  } else {
+    x.style.display = "none";
+  }
+  var x = document.getElementById("workmenu");
+  if (x.style.display === "") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "";
+  }
+  var x = document.getElementById("bioexpand");
+  if (x.style.display === "inline") {
+    x.style.display = "inline";
+  } else {
+    x.style.display = "inline";
+  }
+  var x = document.getElementById("bioclose");
+  if (x.style.display === "none") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "none";
+  }
+  var x = document.getElementById("bio");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "none";
+  }
+}
+function workopen2() {
+  var x = document.getElementById("workexpandmobile");
+  if (x.style.display === "none") {
+    x.style.display = "inline";
+  } else {
+    x.style.display = "none";
+  }
+  var x = document.getElementById("workclosemobile");
+  if (x.style.display === "inline") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "inline";
+  }
+  var x = document.getElementById("workmenu");
+  if (x.style.display === "") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "";
+  }
+  var x = document.getElementById("bioexpandmobile");
+  if (x.style.display === "inline") {
+    x.style.display = "inline";
+  } else {
+    x.style.display = "inline";
+  }
+  var x = document.getElementById("bioclosemobile");
+  if (x.style.display === "none") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "none";
+  }
+  var x = document.getElementById("bio");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+<script>
+    function openNILMDTS() {
+  var x = document.getElementById("NILMDTS");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "block";
+  }
+}
+function openHarlingen() {
+  var x = document.getElementById("Harlingen");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+</body>
 </body>
 </html>
