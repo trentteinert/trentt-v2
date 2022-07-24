@@ -450,7 +450,7 @@ body{
   }
   .textblock{
     display: block;
-    position: absolute;
+    position: relative;
     width: 90%;
     margin-left:5%;
     background-color:rgba(153, 59, 59, 0);
@@ -473,15 +473,31 @@ body{
     background-color:var(--secondary-color);
     border-radius:2px;
     text-decoration: none;
-    position:absolute;
+    position:relative;
+    margin-left: 48%;
+    text-align: center;
     padding: 10px;
-    margin-left:50%;
-    margin-top: 1220px;
+    margin-bottom: 50px;
+    background-color:var(--secondary-color);
+    border-radius:2px;
+    text-decoration: none;
+
+    width: 120px;
+    margin-top: 50px;
   }
   .dwnldpdf{
     color:var(--primary-color);
     text-decoration: none;
   }
+  .scrolltotop{
+    width:100%;
+    position: relative;
+    display: block;
+    justify-content: center;
+    height: 100px;
+    margin-top:50px;
+    background-color: rgba(0, 0, 255, 0);
+  } 
   .Slideshow{
     display:flex;
     justify-content: center;
@@ -849,14 +865,6 @@ body{
       justify-content:center;
       cursor: pointer;
     }
-    .scrolltotop{
-      width: 50%;
-      display: flex;
-      justify-content: center;
-      height: 100px;
-      margin-top: 1225px;
-      background-color: rgba(0, 0, 255, 0);
-    } 
     .btn{
       width:100%;
       font-family: 'Inconsolata';
