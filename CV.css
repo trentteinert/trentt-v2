@@ -409,6 +409,7 @@ body{
   h1{
     font-family: 'Inconsolata';
     color:var(--secondary-color);
+    font-size: 25px;
   }
   p:hover{
     color:var(--secondary-color);
@@ -466,6 +467,7 @@ body{
   h1{
     font-family: 'Inconsolata';
     color:var(--secondary-color);
+    font-size: 20px;
   }
   p:hover{
     color:var(--secondary-color);
