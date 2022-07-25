@@ -50,6 +50,7 @@ body{
   margin-top: 20px;
 }
   .tittle{
+    text-decoration: none;
     display: flex;
     -webkit-user-select: none; /* Safari */        
     -moz-user-select: none; /* Firefox */
@@ -438,6 +439,7 @@ body{
     margin-top: 20px;
   }
     .tittle{
+      text-decoration: none;
       display: flex;
       -webkit-user-select: none; /* Safari */        
       -moz-user-select: none; /* Firefox */
