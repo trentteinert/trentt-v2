@@ -18,13 +18,13 @@
     <div id="left"class="left">
       <div class="tittle">Trent Teinert</div>
       <a class="contact" href="mailto:trentteinert@gmail.com">contact@trentteinert.com</a><br/>
-      <div id="bioexpand" class="bioexpand" onclick="showbio()">+ bio
+      <div id="bioexpand" class="bioexpand" style="display: none;" onclick="showbio()">+ bio
       </div>
-      <div id="bioclose" class="bioexpand" onclick="showbio()" style="display:none;">- bio
+      <div id="bioclose" class="bioexpand" onclick="showbio()">- bio
       </div>
       <div id="bioexpandmobile" class="bioexpand" onclick="showbio2()">+ bio
       </div>
-      <div id="bioclosemobile" class="bioexpand" onclick="showbio2()" style="display:none;">- bio
+      <div id="bioclosemobile" class="bioexpand" onclick="showbio2()">- bio
       </div>
       <a id="CVexpand" class="bioexpand" href="./CV.html">+ CV</a>
       <a id="workexpand" class="bioexpand" onclick="workopen()">+ menu</a>
@@ -32,8 +32,8 @@
       <a id="workexpandmobile" class="bioexpand" onclick="workopen2()">+ menu</a>
       <a id="workclosemobile" class="bioexpand" onclick="workopen2()">- menu</a>
     </div>
-    <div id="workmenu" class="workmenu">
-      <a class="work" href="./index.html"><div class="work1" style="color:rgb(245, 131, 131);">Now I lay me down to sleep.</div></a>
+    <div id="workmenu" class="workmenu" style="display:none;">
+      <a class="work" href="./index.html"><div class="work1">Now I lay me down to sleep.</div></a>
       <a class="work" href="./Harlingen.html"><div class="work1">Harlingen</div></a>
       <a class="work" href="./Harlingen AGRI.html"><div class="work1">Harlingen AGRI</div></a>
       <a class="work" href="./disquiet.html"><div class="work1">Disquiet</div></a>
@@ -133,16 +133,16 @@ function showSlides2(n) {
     x.style.display = "none";
   }
   var x = document.getElementById("bioclose");
-  if (x.style.display === "inline") {
-    x.style.display = "none";
-  } else {
+  if (x.style.display === "none") {
     x.style.display = "inline";
+  } else {
+    x.style.display = "none";
   }
   var x = document.getElementById("bio");
-  if (x.style.display === "block") {
-    x.style.display = "none";
+  if (x.style.display === "none") {
+    x.style.display = "inline";
   } else {
-    x.style.display = "block";
+    x.style.display = "none";
   }
   var x = document.getElementById("workexpand");
   if (x.style.display === "inline") {
@@ -233,16 +233,16 @@ function showbio2() {
   }
   function workopen() {
   var x = document.getElementById("workexpand");
-  if (x.style.display === "") {
-    x.style.display = "inline";
-  } else {
-    x.style.display = "";
-  }
-  var x = document.getElementById("workclose");
   if (x.style.display === "none") {
     x.style.display = "inline";
   } else {
     x.style.display = "none";
+  }
+  var x = document.getElementById("workclose");
+  if (x.style.display === "inline") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "inline";
   }
   var x = document.getElementById("workmenu");
   if (x.style.display === "") {
@@ -283,10 +283,10 @@ function workopen2() {
     x.style.display = "inline";
   }
   var x = document.getElementById("workmenu");
-  if (x.style.display === "") {
-    x.style.display = "block";
+  if (x.style.display === "block") {
+    x.style.display = "none";
   } else {
-    x.style.display = "";
+    x.style.display = "block";
   }
   var x = document.getElementById("bioexpandmobile");
   if (x.style.display === "inline") {

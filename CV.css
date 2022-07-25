@@ -76,7 +76,7 @@ body{
     text-decoration: none;
   }
   .bio{
-    display:none;
+    display:inline;
     font-size: .8em;
     line-height: 20px;
     position: absolute;
@@ -109,10 +109,10 @@ body{
     user-select: none; /* Standard */
   }
   #bioexpand{
-    display: inline;
+    display: none;
   }
   #bioclose{
-    display: none;
+    display: inline;
   }
   #bioclosemobile{
     display: none;
@@ -134,14 +134,17 @@ body{
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
   }
-  #workexpand{
-    display: none;
+  #workclose{
+    display:none;
   }
   #workclosemobile{
     display: none;
   }
   #workexpandmobile{
     display: none;
+  }
+  #workexpand{
+    display: inline;
   }
   .work{
     text-decoration: none;
@@ -618,9 +621,6 @@ body{
       -ms-user-select: none; /* IE10+/Edge */
       user-select: none; /* Standard */
     }
-    #workexpand{
-      display: none;
-    }
     #workclose{
       display: none;
     }
@@ -629,6 +629,12 @@ body{
     }
     #workexpandmobile{
       display: inline;
+    }
+    #workexpand{
+      display: none;
+    }
+    #workmenu{
+      display: none;
     }
     .work{
       text-decoration: none;
